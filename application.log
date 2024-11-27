@@ -1,0 +1,10 @@
+[INFO ] 2024-11-27 10:36:13.480 [main] Log - *** Running test method TC_CustomerRegisterModule...
+[INFO ] 2024-11-27 10:36:17.232 [main] Log - Driver has initialized successfully for firefoxbrowser
+[INFO ] 2024-11-27 10:36:29.905 [main] Log - PC Registered Successfully!
+[INFO ] 2024-11-27 10:36:41.167 [main] Log - Valid Password, Validated Successfully!
+[INFO ] 2024-11-27 10:36:52.249 [main] Log - Customer Register Window loaded Successfully!
+[INFO ] 2024-11-27 10:37:02.209 [main] Log - "Please Fill the Required Details " is displayed when clicked on "View button" without entering CustId
+[INFO ] 2024-11-27 10:37:08.151 [main] Log - All parameters present
+[INFO ] 2024-11-27 10:37:12.597 [main] Log - Error message displayed for incorrect Customer ID(< 12 digits)
+[INFO ] 2024-11-27 10:37:26.456 [main] Log - Customer Fetched Using Valid Customer ID, Successfully
+[INFO ] 2024-11-27 10:37:40.534 [main] Log - User SignedOut
