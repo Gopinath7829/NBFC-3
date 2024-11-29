@@ -17,6 +17,7 @@ public class PageRepositary_Cust_CustSearch {
 	public By logoutOk = By.xpath("/html/body/div[1]/div/div[2]/div/form/div[11]/div[3]/div/button[1]");
 	public By invalidPaswrdErrMsg = By.xpath("//*[@id=\"lblErrorMessage\"]");
 	public By home = By.xpath("//*[@id=\"ctl00_ctl00_MasterCaption\"]");
+	
 	//Customer Search Window
 	public By cust = By.xpath("/html/body/form/div[7]/div[1]/div/div/div/div/div/div/div/ul/li[1]/div");
 	public By custSrch = By.xpath("/html/body/form/div[7]/div[1]/div/div/div/div/div/div/div/ul/li[1]/ul/li[2]/a");

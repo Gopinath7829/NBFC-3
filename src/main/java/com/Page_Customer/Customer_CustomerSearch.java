@@ -292,6 +292,48 @@ public boolean searchByValidName(Map<Object, Object> testdata, ITestContext cont
 		return true;
 	}
 	
+	public boolean houseNameAlphanumeric(Map<Object, Object> testdata, ITestContext context) throws ClassNotFoundException, InterruptedException, IOException {
+				String houseNameAlphanumeric = testdata.get("houseNameAlphanumeric").toString();				
+				input(custSearch.custName, houseNameAlphanumeric);
+				click(custSearch.custSearchBtn);
+				if(ElementDisplayed(custSearch.custGridItem)) {
+					ExtentTestManager.getTest().log(Status.PASS, "Customer Fetched with House Name (Alphanumeric value), Successfully!");
+					Log.info("Customer Fetched with Alphanumeric value, Successfully!");
+				}
+				Thread.sleep(2000);
+				click(custSearch.custClearBtn);
+		return true;
+	}
+	
+	public boolean houseNameNumeric(Map<Object, Object> testdata, ITestContext context) throws ClassNotFoundException, InterruptedException, IOException {
+				String houseNameNumeric = testdata.get("houseNameNumeric").toString();				
+				input(custSearch.custName, houseNameNumeric);
+				click(custSearch.custSearchBtn);
+				if(ElementDisplayed(custSearch.custGridItem)) {
+					ExtentTestManager.getTest().log(Status.PASS, "Customer Fetched with House Name (Numeric value), Successfully!");
+					Log.info("Customer Fetched with Alphanumeric value, Successfully!");
+				}
+				Thread.sleep(2000);
+				click(custSearch.custClearBtn);
+return true;
+}
+	
+	public boolean houseName(Map<Object, Object> testdata, ITestContext context) throws ClassNotFoundException, InterruptedException, IOException {
+				String houseName = testdata.get("houseName").toString();				
+				input(custSearch.custName, houseName);
+				click(custSearch.custSearchBtn);
+				if(ElementDisplayed(custSearch.custGridItem)) {
+					ExtentTestManager.getTest().log(Status.PASS, "Customer Fetched with House Name(Alphabetic value), Successfully!");
+					Log.info("Customer Fetched with Alphanumeric value, Successfully!");
+				}
+				Thread.sleep(2000);
+				click(custSearch.custClearBtn);
+return true;
+}	
+	
+	
+	
+	
 	public boolean signOut() throws InterruptedException {
 		click(custSearch.custSignOut);
 		ExtentTestManager.getTest().log(Status.PASS, "User SignedOut");
