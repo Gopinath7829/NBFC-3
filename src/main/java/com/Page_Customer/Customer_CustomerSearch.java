@@ -27,6 +27,7 @@ public class Customer_CustomerSearch extends Base_Class{
 		input(custSearch.formName, pcRegFormName);
 		String pcRegFormPcName = testdata.get("pcRegFormPcName").toString();	
 		input(custSearch.formComputerName, pcRegFormPcName);
+		Thread.sleep(5000);
 		click(custSearch.formBranchName);
 		click(custSearch.formSubmitBtn);
 		ExtentTestManager.getTest().log(Status.PASS, "PC Registered Successfully!");

@@ -1,17 +1,42 @@
-[INFO ] 2024-11-29 12:24:03.966 [main] Log - *** Running test method TC_CustomerSearchModule...
-[INFO ] 2024-11-29 12:24:09.483 [main] Log - Driver has initialized successfully for firefoxbrowser
-[INFO ] 2024-11-29 12:24:22.427 [main] Log - PC Registered Successfully!
-[INFO ] 2024-11-29 12:24:31.760 [main] Log - Invalid Password, Validated Successfully!
-[INFO ] 2024-11-29 12:24:44.554 [main] Log - Valid Password, Validated Successfully!
-[INFO ] 2024-11-29 12:24:57.634 [main] Log - Customer Search Window loaded Successfully!
-[INFO ] 2024-11-29 12:25:02.298 [main] Log - Error message displayed for incorrect Mobile NO.(< 10 digits)
-[INFO ] 2024-11-29 12:25:12.662 [main] Log - Error message displayed for incorrect Mobile NO.(> 10 digits)
-[INFO ] 2024-11-29 12:25:24.055 [main] Log - Fetched Customer with Valid Mobile No., Successfully!
-[INFO ] 2024-11-29 12:25:34.203 [main] Log - Error message displayed for incorrect Name (Numeric)
-[INFO ] 2024-11-29 12:25:44.235 [main] Log - Error message displayed for incorrect Name (Alphanumeric)
-[INFO ] 2024-11-29 12:25:54.370 [main] Log - Fetched Customer with Valid Name, Successfully!
-[INFO ] 2024-11-29 12:26:09.161 [main] Log - All Availabe customer details displayed, Successfully!
-[INFO ] 2024-11-29 12:26:14.780 [main] Log - Error message displayed for incorrect Aadhaar(< 12 digits)
-[INFO ] 2024-11-29 12:26:23.710 [main] Log - All Inputs Cleared., Successfully!
-[INFO ] 2024-11-29 12:26:54.430 [main] Log - Successfully Fetched Institutional Customers in the Grid
-[INFO ] 2024-11-29 12:27:04.032 [main] Log - User SignedOut
+[INFO ] 2024-12-23 11:13:08.819 [main] Log - *** Running test method TC_CustomerRatingModule...
+[INFO ] 2024-12-23 11:13:37.471 [main] Log - Driver has initialized successfully for firefoxbrowser
+[INFO ] 2024-12-23 11:13:47.992 [main] Log - Title is displayed : BeaconPro - Login
+[INFO ] 2024-12-23 11:14:05.415 [main] Log - PC Registered Successfully!
+[INFO ] 2024-12-23 11:14:22.043 [main] Log - Valid Password, Validated Successfully!
+[INFO ] 2024-12-23 11:14:26.872 [main] Log - Step 1->Click on customer
+[INFO ] 2024-12-23 11:14:31.608 [main] Log - Step 2->Click on Customer Rating
+[INFO ] 2024-12-23 11:14:31.679 [main] Log - Expected Result: Customer Rating window is displayed
+[INFO ] 2024-12-23 11:14:32.764 [main] Log - Step 1->Check module name at the top of the window
+[INFO ] 2024-12-23 11:14:32.765 [main] Log - Expected Result: Module name is visible
+[INFO ] 2024-12-23 11:14:32.971 [main] Log - Step 1->1. Look for Customer ID and Customer Name fields on the form
+[INFO ] 2024-12-23 11:14:32.972 [main] Log - Expected Result: Both fields are present
+[INFO ] 2024-12-23 11:14:33.269 [main] Log - Step 1:Look for Go, Save, Close, Cancel buttons
+[INFO ] 2024-12-23 11:14:33.270 [main] Log - Expected Result: All buttons are present
+[INFO ] 2024-12-23 11:14:37.881 [main] Log - Step 1: Check for mandatory indicators on Customer ID and Name fields
+[INFO ] 2024-12-23 11:14:37.970 [main] Log - Expected Result: Both fields are marked as mandatory
+[INFO ] 2024-12-23 11:14:42.493 [main] Log - Step 1: Observe the color of Customer ID and Name fields
+[INFO ] 2024-12-23 11:14:42.494 [main] Log - Expected Result: Fields are orange in color
+[INFO ] 2024-12-23 11:14:42.756 [main] Log - Step-1: Hover over Customer ID and Name fields
+[INFO ] 2024-12-23 11:14:42.975 [main] Log - Expected Result: Appropriate tooltips are displayed CustomerID & Customer Name
+[INFO ] 2024-12-23 11:14:43.172 [main] Log - Step -1: Look for a customer search button on the right side of Customer ID
+[INFO ] 2024-12-23 11:14:43.172 [main] Log - Expected Result: Customer search button is present
+[INFO ] 2024-12-23 11:14:48.067 [main] Log - Step 1: Click the customer search button
+[INFO ] 2024-12-23 11:14:48.232 [main] Log - Expected Result: A search popup appears
+[INFO ] 2024-12-23 11:14:57.385 [main] Log - Step 1: Select a customer from the popup
+[INFO ] 2024-12-23 11:14:57.387 [main] Log - Expected Result: Customer Name is autoloaded AJITHAMOL
+[INFO ] 2024-12-23 11:14:57.573 [main] Log - TC No. - 12 --> Test Go Button Functionality
+[INFO ] 2024-12-23 11:15:06.443 [main] Log - Step 1: Click the Go button
+[INFO ] 2024-12-23 11:15:06.591 [main] Log - Expected Result: Fields such as custid, Name, Risk, PAN NO, etc., are loaded 
+[INFO ] 2024-12-23 11:15:06.735 [main] Log - Step 1: Verify the drop down arrow  option is present
+[INFO ] 2024-12-23 11:15:06.737 [main] Log - Expected Result: drop down arrow option is present
+[INFO ] 2024-12-23 11:15:06.914 [main] Log - Step 1: Check for Current Rating and Add New Rating sections
+[INFO ] 2024-12-23 11:15:06.915 [main] Log - Expected Result: Both sections are present
+[INFO ] 2024-12-23 11:15:07.053 [main] Log - Step 1: Select a customer with no ratingssections
+[INFO ] 2024-12-23 11:15:07.053 [main] Log - Expected Result: No data found' message is displayed in customer current rating section
+[INFO ] 2024-12-23 11:15:07.217 [main] Log - Step 1: Select agency from dropdown
+[INFO ] 2024-12-23 11:15:07.265 [main] Log - Step 2: Enter rating
+[INFO ] 2024-12-23 11:15:07.311 [main] Log - Step 3: Enter date
+[INFO ] 2024-12-23 11:15:07.341 [main] Log - Step 4: Enter remarks
+[INFO ] 2024-12-23 11:15:07.343 [main] Log - Step 5: Click on save button
+[INFO ] 2024-12-23 11:15:11.821 [main] Log - Expected Result: Successfully updated
+[INFO ] 2024-12-23 11:15:26.073 [main] Log - User SignedOut

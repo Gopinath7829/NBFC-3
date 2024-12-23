@@ -29,7 +29,9 @@ public class Customer_CustomerRegister extends Base_Class{
 			Log.info("TC No. - 01 --> Customer Register Window loaded Successfully!");
 		}
 		return true;
-	}
+	}   
+	
+	
 	
 	//Customer ID Field Required, validation
 	public boolean srchWithoutCustId() throws InterruptedException {

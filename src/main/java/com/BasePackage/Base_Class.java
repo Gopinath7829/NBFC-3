@@ -39,9 +39,9 @@ public class Base_Class {
 		return driver;
 	}
 	
-	private static By L_username = By.id("Username");
-	private static By L_password = By.id("Password");
-	private static  By L_SignIn = By.xpath("//span[text()=' Sign In ']");
+	private static By L_username = By.id("txtUserName_txt");
+	private static By L_password = By.id("txtPassword_txt");
+	private static  By L_SignIn = By.xpath("//input[@id='imgbtnSubmit']");
 	private static By DesktopNot = By.xpath("//button[text()='OK']");
 	//private static By L_LogOut= By.xpath("//div[@class='user position ng-tns-c3-15 ng-star-inserted']");
 	//private static By L_LogAlert= By.xpath("//button[text()='Sign out']");
@@ -74,7 +74,7 @@ public class Base_Class {
 			driver = new ChromeDriver(options);		
 			break;
 
-		case "FIREFOX":
+		/*case "FIREFOX":
 			
 			System.setProperty("webdriver.gecko.driver","D:\\Testing\\geckodriver.exe");
 			File pathBinary = new File("C:\\Users\\akash.venkatesh\\AppData\\Local\\Mozilla Firefox\\firefox.exe");
@@ -91,6 +91,16 @@ public class Base_Class {
 
 		default:
 			System.err.println("The Driver is not defined");
+		}*/
+			
+		case "FIREFOX":
+
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();			
+			break;
+
+		default:
+			System.err.println("The Driver is not defined");
 		}
 
 		driver.manage().window().maximize();
@@ -98,19 +108,23 @@ public class Base_Class {
 
 		Log.info("Driver has initialized successfully for "+Browser+"browser");
 		driver.get(Url);
-//		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//		Thread.sleep(9000);
-//		Pagetitle = driver.getTitle();
-//		Log.info("Title is displayed : "+Pagetitle);
-//		input(L_username, UserName);
-//		input(L_password, Password);
+		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Thread.sleep(9000);
+		Pagetitle = driver.getTitle();
+		Log.info("Title is displayed : "+Pagetitle);
+		input(L_username, UserName);
+		input(L_password, Password);
 //		click(L_SignIn);
 //		Thread.sleep(4000);
 //		click(DesktopNot);
 //		Thread.sleep(1000);
 
 
+	}
+	
+	public static String getValue(By path) {
+		return driver.findElement(path).getText(); 
 	}
 
 
@@ -152,7 +166,6 @@ public class Base_Class {
 		driver.switchTo().alert().accept();
 		//driver.switchTo().alert().dismiss();
 
-		
 	}
 
 	public static  void INclick(By element) throws InterruptedException {

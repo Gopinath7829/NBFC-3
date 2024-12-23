@@ -3,12 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.LeaveModule.AllScenarios_LeaveModule">
+      <class name="com.Page_Customer.Customer_CustomerRating">
         <methods>
-          <include name="RUNALL" invocation-numbers="0"/>
-          <include name="reference"/>
+          <include name="verifyToolTips"/>
+          <include name="testButtonPresence"/>
+          <include name="verifyCustomerIDAndNameFieldsPresence"/>
+          <include name="testAccessCustomerRatingWindow"/>
+          <include name="testCustomerSearchButtonPresence"/>
+          <include name="testModuleNameIsDisplayed"/>
+          <include name="checkMandField"/>
+          <include name="searchcCustFromPopup"/>
+          <include name="testVerifyDropDownArrowOption"/>
+          <include name="checkColour"/>
+          <include name="goBtnFun"/>
+          <include name="testSearchButtonFunctionality"/>
         </methods>
-      </class> <!-- com.test.LeaveModule.AllScenarios_LeaveModule -->
+      </class> <!-- com.Page_Customer.Customer_CustomerRating -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
