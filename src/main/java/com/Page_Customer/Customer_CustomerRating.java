@@ -213,7 +213,6 @@ public class Customer_CustomerRating extends Base_Class {
 		driver.switchTo().window(mainWindow);
 
 		ExtentTestManager.endTest();
-
 	}
 
 
@@ -247,8 +246,6 @@ public class Customer_CustomerRating extends Base_Class {
 		driver.switchTo().window(mainWindow);
 		ExtentTestManager.endTest();
 	}
-
-
 
 
 	//TC NO-12-->Test Go Button Functionality
@@ -310,7 +307,6 @@ public class Customer_CustomerRating extends Base_Class {
 
 	}
 
-
 	//TC NO-16-->Validate 'No Data Found' Message
 
 	@Test
@@ -323,12 +319,8 @@ public class Customer_CustomerRating extends Base_Class {
 			ExtentTestManager.getTest().log(Status.PASS, "Expected Result: No data found' message is displayed in customer current rating section");
 			Log.info("Expected Result: No data found' message is displayed in customer current rating section");
 		}
-
-
 		ExtentTestManager.endTest();
-
 	}
-
 
 	//TC NO-17--> Agency flow
 	public void agencyFunc(Map<Object, Object> testdata, ITestContext context) throws ClassNotFoundException, InterruptedException, IOException {
@@ -372,6 +364,4 @@ public class Customer_CustomerRating extends Base_Class {
 		ExtentTestManager.endTest();
 
 	}
-
-
 }

@@ -1,42 +1,379 @@
-[INFO ] 2024-12-23 11:13:08.819 [main] Log - *** Running test method TC_CustomerRatingModule...
-[INFO ] 2024-12-23 11:13:37.471 [main] Log - Driver has initialized successfully for firefoxbrowser
-[INFO ] 2024-12-23 11:13:47.992 [main] Log - Title is displayed : BeaconPro - Login
-[INFO ] 2024-12-23 11:14:05.415 [main] Log - PC Registered Successfully!
-[INFO ] 2024-12-23 11:14:22.043 [main] Log - Valid Password, Validated Successfully!
-[INFO ] 2024-12-23 11:14:26.872 [main] Log - Step 1->Click on customer
-[INFO ] 2024-12-23 11:14:31.608 [main] Log - Step 2->Click on Customer Rating
-[INFO ] 2024-12-23 11:14:31.679 [main] Log - Expected Result: Customer Rating window is displayed
-[INFO ] 2024-12-23 11:14:32.764 [main] Log - Step 1->Check module name at the top of the window
-[INFO ] 2024-12-23 11:14:32.765 [main] Log - Expected Result: Module name is visible
-[INFO ] 2024-12-23 11:14:32.971 [main] Log - Step 1->1. Look for Customer ID and Customer Name fields on the form
-[INFO ] 2024-12-23 11:14:32.972 [main] Log - Expected Result: Both fields are present
-[INFO ] 2024-12-23 11:14:33.269 [main] Log - Step 1:Look for Go, Save, Close, Cancel buttons
-[INFO ] 2024-12-23 11:14:33.270 [main] Log - Expected Result: All buttons are present
-[INFO ] 2024-12-23 11:14:37.881 [main] Log - Step 1: Check for mandatory indicators on Customer ID and Name fields
-[INFO ] 2024-12-23 11:14:37.970 [main] Log - Expected Result: Both fields are marked as mandatory
-[INFO ] 2024-12-23 11:14:42.493 [main] Log - Step 1: Observe the color of Customer ID and Name fields
-[INFO ] 2024-12-23 11:14:42.494 [main] Log - Expected Result: Fields are orange in color
-[INFO ] 2024-12-23 11:14:42.756 [main] Log - Step-1: Hover over Customer ID and Name fields
-[INFO ] 2024-12-23 11:14:42.975 [main] Log - Expected Result: Appropriate tooltips are displayed CustomerID & Customer Name
-[INFO ] 2024-12-23 11:14:43.172 [main] Log - Step -1: Look for a customer search button on the right side of Customer ID
-[INFO ] 2024-12-23 11:14:43.172 [main] Log - Expected Result: Customer search button is present
-[INFO ] 2024-12-23 11:14:48.067 [main] Log - Step 1: Click the customer search button
-[INFO ] 2024-12-23 11:14:48.232 [main] Log - Expected Result: A search popup appears
-[INFO ] 2024-12-23 11:14:57.385 [main] Log - Step 1: Select a customer from the popup
-[INFO ] 2024-12-23 11:14:57.387 [main] Log - Expected Result: Customer Name is autoloaded AJITHAMOL
-[INFO ] 2024-12-23 11:14:57.573 [main] Log - TC No. - 12 --> Test Go Button Functionality
-[INFO ] 2024-12-23 11:15:06.443 [main] Log - Step 1: Click the Go button
-[INFO ] 2024-12-23 11:15:06.591 [main] Log - Expected Result: Fields such as custid, Name, Risk, PAN NO, etc., are loaded 
-[INFO ] 2024-12-23 11:15:06.735 [main] Log - Step 1: Verify the drop down arrow  option is present
-[INFO ] 2024-12-23 11:15:06.737 [main] Log - Expected Result: drop down arrow option is present
-[INFO ] 2024-12-23 11:15:06.914 [main] Log - Step 1: Check for Current Rating and Add New Rating sections
-[INFO ] 2024-12-23 11:15:06.915 [main] Log - Expected Result: Both sections are present
-[INFO ] 2024-12-23 11:15:07.053 [main] Log - Step 1: Select a customer with no ratingssections
-[INFO ] 2024-12-23 11:15:07.053 [main] Log - Expected Result: No data found' message is displayed in customer current rating section
-[INFO ] 2024-12-23 11:15:07.217 [main] Log - Step 1: Select agency from dropdown
-[INFO ] 2024-12-23 11:15:07.265 [main] Log - Step 2: Enter rating
-[INFO ] 2024-12-23 11:15:07.311 [main] Log - Step 3: Enter date
-[INFO ] 2024-12-23 11:15:07.341 [main] Log - Step 4: Enter remarks
-[INFO ] 2024-12-23 11:15:07.343 [main] Log - Step 5: Click on save button
-[INFO ] 2024-12-23 11:15:11.821 [main] Log - Expected Result: Successfully updated
-[INFO ] 2024-12-23 11:15:26.073 [main] Log - User SignedOut
+[INFO ] 2025-01-22 10:00:46.041 [main] Log - *** Running test method TC_InstitutionalCustomer Module...
+[INFO ] 2025-01-22 10:00:46.049 [main] Log - Step-1: Launch NBFC application.
+[INFO ] 2025-01-22 10:00:58.587 [main] Log - Driver has initialized successfully for firefoxbrowser
+[INFO ] 2025-01-22 10:01:11.891 [main] Log - Title is displayed : BeaconPro - Login
+[INFO ] 2025-01-22 10:01:27.934 [main] Log - PC Registered Successfully!
+[INFO ] 2025-01-22 10:01:29.787 [main] Log - Step-1: Enter valid username.
+[INFO ] 2025-01-22 10:01:29.889 [main] Log - Step-2: Enter valid password.
+[INFO ] 2025-01-22 10:01:39.484 [main] Log - Step-3: Click on 'Login'.
+[INFO ] 2025-01-22 10:01:49.499 [main] Log - Expected Result: User is logged in successfully.
+[INFO ] 2025-01-22 10:01:54.565 [main] Log - Step1: Navigate to 'Customer'.
+[INFO ] 2025-01-22 10:02:00.949 [main] Log - Step-2: Select 'Institutional Customer'.
+[INFO ] 2025-01-22 10:02:01.088 [main] Log - Expected Resut: Institutional Customer window opens successfully.
+[INFO ] 2025-01-22 10:02:01.156 [main] Log - Step1: Check module name displayed at the top.
+[INFO ] 2025-01-22 10:02:01.156 [main] Log - Expected Resut: Module name is displayed as 'New Customer'.
+[INFO ] 2025-01-22 10:02:06.234 [main] Log - Step1: Check for the presence of 'Institution Details' section.
+[INFO ] 2025-01-22 10:02:06.235 [main] Log - Expected Resut: 'Institution Details' section is present.
+[INFO ] 2025-01-22 10:02:06.295 [main] Log - Step1:  Check the presence of 'Start Date' field.
+[INFO ] 2025-01-22 10:02:06.295 [main] Log - Expected Resut: 'Start Date' field is present.
+[INFO ] 2025-01-22 10:02:06.347 [main] Log - Step1:  Check display format of 'Start Date' field.
+[INFO ] 2025-01-22 10:02:06.347 [main] Log - Expected Resut: 'Start Date' field is displayed in date format.
+[INFO ] 2025-01-22 10:02:06.394 [main] Log - Step1: Try to edit 'Start Date' field.
+[INFO ] 2025-01-22 10:02:06.394 [main] Log - Expected Result: Editing is not possible
+[INFO ] 2025-01-22 10:02:06.459 [main] Log - Step1: Check the presence of 'First Name' field.
+[INFO ] 2025-01-22 10:02:06.459 [main] Log - Expected Result: 'First Name' field is present.
+[INFO ] 2025-01-22 10:02:06.573 [main] Log - Step1: Enter alphabets.
+[INFO ] 2025-01-22 10:02:06.573 [main] Log - Expected Result: All inputs are possible in the 'First Name' field.
+[INFO ] 2025-01-22 10:02:06.619 [main] Log - Step1: Enter 'First Name'.
+[INFO ] 2025-01-22 10:02:06.636 [main] Log - Step 2:Check 'Display Name'.
+[INFO ] 2025-01-22 10:02:06.636 [main] Log - Expected Result: 'Display Name' auto-loads with 'First Name'.
+[INFO ] 2025-01-22 10:02:06.904 [main] Log - Step 1:Open 'Const Type' dropdown.
+[INFO ] 2025-01-22 10:02:06.974 [main] Log - Step 2:Check available options.
+[INFO ] 2025-01-22 10:02:06.975 [main] Log - Expected Result: Dropdown lists valid Const Types.
+[INFO ] 2025-01-22 10:02:07.291 [main] Log - Step 1:Select an option from 'Const Type' dropdown..
+[INFO ] 2025-01-22 10:02:07.292 [main] Log - Expected Result: Selected 'Const Type' is displayed.
+[INFO ] 2025-01-22 10:02:07.325 [main] Log - Step 1:Check the presence of 'Business' field.
+[INFO ] 2025-01-22 10:02:07.326 [main] Log - Expected Result: 'Business' field is present.
+[INFO ] 2025-01-22 10:02:07.372 [main] Log - Step 1:Open 'Business' dropdown.
+[INFO ] 2025-01-22 10:02:07.508 [main] Log - Expected Result: Dropdown lists all Businesses.
+[INFO ] 2025-01-22 10:02:07.551 [main] Log - Step 1:Select an option from 'Business' dropdown.
+[INFO ] 2025-01-22 10:02:07.940 [main] Log - Expected Result: Selected 'Business' is displayed.
+[INFO ] 2025-01-22 10:02:08.262 [main] Log - Step 1:Select an option from 'Regd To' dropdown.
+[INFO ] 2025-01-22 10:02:08.263 [main] Log - Expected Result: Selected 'Regd To' is displayed.
+[INFO ] 2025-01-22 10:02:12.630 [main] Log - Step 1:Select date from calendar.
+[INFO ] 2025-01-22 10:02:12.630 [main] Log - Expected Result: Selection and manual typing are possible.
+[INFO ] 2025-01-22 10:02:12.687 [main] Log - Step 1:Enter alphabets, numbers, and special characters in 'RegNo'.
+[INFO ] 2025-01-22 10:02:12.688 [main] Log - Expected Result: All inputs are possible in 'RegNo'.
+[INFO ] 2025-01-22 10:02:12.773 [main] Log - Step 1:Enter alphabets, numbers, and special characters in 'Regplace'.
+[INFO ] 2025-01-22 10:02:12.773 [main] Log - Expected Result: All inputs are possible in 'Regplace'.
+[INFO ] 2025-01-22 10:02:13.727 [main] Log - Step 1:Enter alphabets, numbers, and special characters in 'PAN'.
+[INFO ] 2025-01-22 10:02:13.728 [main] Log - Expected Result: All inputs are possible in 'Regplace'.
+[INFO ] 2025-01-22 10:02:13.796 [main] Log - Step 1:Enter alphabets, numbers, and special characters in 'CST'.
+[INFO ] 2025-01-22 10:02:13.796 [main] Log - Expected Result: All inputs are possible in 'CST'.
+[INFO ] 2025-01-22 10:02:13.862 [main] Log - Step 1:Enter numbers.
+[INFO ] 2025-01-22 10:02:13.862 [main] Log - Expected Result: Only numbers are accepted.
+[INFO ] 2025-01-22 10:02:13.935 [main] Log - Step 1:Enter alphabets, numbers, and special characters in 'TIN'.
+[INFO ] 2025-01-22 10:02:13.935 [main] Log - Expected Result: All inputs are possible in 'TIN'.
+[INFO ] 2025-01-22 10:02:14.013 [main] Log - Step 1:Enter alphabets, numbers, and special characters in 'TAN No'.
+[INFO ] 2025-01-22 10:02:14.013 [main] Log - Expected Result: All inputs are possible in 'TAN No'.
+[INFO ] 2025-01-22 10:02:14.093 [main] Log - Step 1:Enter alphabets, numbers, and special characters in 'FAX No'.
+[INFO ] 2025-01-22 10:02:14.093 [main] Log - Expected Result: All inputs are possible in 'FAX No'.
+[INFO ] 2025-01-22 10:02:14.151 [main] Log - Step 1:Enter alphabets, numbers, and special characters in 'Email'.
+[INFO ] 2025-01-22 10:02:14.152 [main] Log - Expected Result: All inputs are possible in 'Email'.
+[INFO ] 2025-01-22 10:02:14.209 [main] Log - Step 1:Enter alphabets, numbers, and special characters in 'Email'.
+[INFO ] 2025-01-22 10:02:14.210 [main] Log - Expected Result: All inputs are possible in 'OperatorName'.
+[INFO ] 2025-01-22 10:02:14.420 [main] Log - Step 1:Enter numbers..
+[INFO ] 2025-01-22 10:02:14.420 [main] Log - Expected Result: Only numbers are accepted.
+[INFO ] 2025-01-22 10:02:14.483 [main] Log - Step 1:Enter alphabets, numbers, and special characters.
+[INFO ] 2025-01-22 10:02:14.495 [main] Log - Expected Result: All inputs are possible.
+[INFO ] 2025-01-22 10:02:14.567 [main] Log - Step 1: Verify the presence of the Owner Details section.
+[INFO ] 2025-01-22 10:02:14.568 [main] Log - Expected Result: Owner Details Section is present.
+[INFO ] 2025-01-22 10:02:14.619 [main] Log - Step 1: Check for the 'Add owner Details' button under Owner Details Section.
+[INFO ] 2025-01-22 10:02:14.620 [main] Log - Expected Result: Add owner Details' Button is present.
+[INFO ] 2025-01-22 10:02:19.201 [main] Log - Step 1: Verify the display of Customer ID, Member No, Name, and Designation fields.
+[INFO ] 2025-01-22 10:02:19.201 [main] Log - Expected Result: All specified fields are displayed.
+[INFO ] 2025-01-22 10:02:19.448 [main] Log - Step 1: Enter alphabets, numbers, and special characters.
+[INFO ] 2025-01-22 10:02:19.448 [main] Log - Expected Result: All inputs are possible.
+[INFO ] 2025-01-22 10:02:19.507 [main] Log - Step 1: Attempt to enter alphabets, numbers, and special characters into the Designation field.
+[INFO ] 2025-01-22 10:02:19.507 [main] Log - Expected Result: All types of entries are possible.
+[INFO ] 2025-01-22 10:02:34.350 [main] Log - Step 1:  Verify presence of MSME Details section.
+[INFO ] 2025-01-22 10:02:34.351 [main] Log - Expected Result: MSME Details section is present.
+[INFO ] 2025-01-22 10:02:34.400 [main] Log - Step 1: Check for the 'Is MSME Customer' checkbox.
+[INFO ] 2025-01-22 10:02:34.438 [main] Log - Step 2: Verify 'Yes' and 'No' labels.
+[INFO ] 2025-01-22 10:02:34.438 [main] Log - Expected Result: Checkbox with 'Yes' and 'No' is present.
+[INFO ] 2025-01-22 10:02:34.482 [main] Log - Step 1: Check if 'Is MSME Customer' default is 'No'.
+[INFO ] 2025-01-22 10:02:34.483 [main] Log - Expected Result: Default marking is 'No'.
+[INFO ] 2025-01-22 10:02:34.532 [main] Log - Step 1: Verify Declaration Browsing option presence.
+[INFO ] 2025-01-22 10:02:38.967 [main] Log - path is :C:\Users\gopinath.elumalai\Downloads\NBFC_CLS
+[INFO ] 2025-01-22 10:02:38.995 [main] Log - Step 2: Attempt to upload .jpeg, .jpg, .png, .gif, .pdf files.
+[INFO ] 2025-01-22 10:02:38.996 [main] Log - Expected Result: Browsing option present; specified file types are uploadable.
+[INFO ] 2025-01-22 10:02:39.094 [main] Log - Step 1:  Enter alphabets, numbers, and special characters.
+[INFO ] 2025-01-22 10:02:39.095 [main] Log - Expected Result: All types of entries are possible.
+[INFO ] 2025-01-22 10:02:43.417 [main] Log - Step 1: Click on yes radio button
+[INFO ] 2025-01-22 10:02:43.488 [main] Log - Step 2: Enter alphabets, numbers, and special characters.
+[INFO ] 2025-01-22 10:02:43.488 [main] Log - Expected Result: All types of entries are possible.
+[INFO ] 2025-01-22 10:02:43.549 [main] Log - Step 1:  Verify document browsing option presence.
+[INFO ] 2025-01-22 10:02:43.555 [main] Log - path is :C:\Users\gopinath.elumalai\Downloads\NBFC_CLS
+[INFO ] 2025-01-22 10:02:43.565 [main] Log - Step 2: Attempt to upload .jpeg, .jpg, .png, .gif, .pdf files.
+[INFO ] 2025-01-22 10:02:43.566 [main] Log - Expected Result: Browsing option present; specified file types are uploadable.
+[INFO ] 2025-01-22 10:02:43.620 [main] Log - Step 1:  Verify presence of 'Institution Other Details' section.
+[INFO ] 2025-01-22 10:02:43.620 [main] Log - Expected Result: Section is present.
+[INFO ] 2025-01-22 10:02:43.669 [main] Log - Step 1:  Enter alphabets, numbers, and special characters.
+[INFO ] 2025-01-22 10:02:43.669 [main] Log - Expected Result: Field present; all types of entries are possible.
+[INFO ] 2025-01-22 10:02:43.979 [main] Log - Step 1:  Check presence of CMR Score Dropdown.
+[INFO ] 2025-01-22 10:02:43.980 [main] Log - Expected Result: Dropdown is present.
+[INFO ] 2025-01-22 10:02:44.058 [main] Log - Step 1:   Verify 'share Holding by individuals' field presence.
+[INFO ] 2025-01-22 10:02:44.075 [main] Log - Step 2:    Attempt data entry of numbers.
+[INFO ] 2025-01-22 10:02:44.075 [main] Log - Expected Result: Field present; only numbers are accepted.
+[INFO ] 2025-01-22 10:02:44.125 [main] Log - Step 1:   Verify 'share Holding by Entity' field presence.
+[INFO ] 2025-01-22 10:02:44.144 [main] Log - Step 2:    Attempt data entry of numbers.
+[INFO ] 2025-01-22 10:02:44.144 [main] Log - Expected Result: Field present; only numbers are accepted.
+[INFO ] 2025-01-22 10:02:44.188 [main] Log - Step 1:   Verify DPIIT Number field presence.
+[INFO ] 2025-01-22 10:02:44.206 [main] Log - Step 2:   Enter alphabets, numbers, special characters.
+[INFO ] 2025-01-22 10:02:44.206 [main] Log - Expected Result: Field present; all types of entries possible.
+[INFO ] 2025-01-22 10:02:44.253 [main] Log - Step 1:   Verify browsing option presence.
+[INFO ] 2025-01-22 10:02:44.260 [main] Log - path is :C:\Users\gopinath.elumalai\Downloads\NBFC_CLS
+[INFO ] 2025-01-22 10:02:44.499 [main] Log - Step 2:   Attempt file upload (.jpeg, .jpg, .png, .gif, .pdf).
+[INFO ] 2025-01-22 10:02:44.500 [main] Log - Expected Result: Option present; files of specified types are uploadable.
+[INFO ] 2025-01-22 10:02:44.573 [main] Log - Step 1:   Verify KSUM Number field presence.
+[INFO ] 2025-01-22 10:02:44.593 [main] Log - Step 2:   Enter alphabets, numbers, special characters.
+[INFO ] 2025-01-22 10:02:44.593 [main] Log - Expected Result: Field present; all types of entries possible.
+[INFO ] 2025-01-22 10:02:44.645 [main] Log - Step 1:   Verify browsing option presence.
+[INFO ] 2025-01-22 10:02:44.652 [main] Log - path is :C:\Users\gopinath.elumalai\Downloads\NBFC_CLS
+[INFO ] 2025-01-22 10:02:44.973 [main] Log - Step 2:  Attempt file upload (.jpeg, .jpg, .png, .gif, .pdf).
+[INFO ] 2025-01-22 10:02:44.973 [main] Log - Expected Result: Option present; files of specified types are uploadable.
+[INFO ] 2025-01-22 10:02:45.022 [main] Log - Step 1:   Verify 'External Credit Rating' field presence.
+[INFO ] 2025-01-22 10:02:45.046 [main] Log - Step 2:  Enter alphabets, numbers, special characters.
+[INFO ] 2025-01-22 10:02:45.047 [main] Log - Expected Result: Field present; all types of entries possible.
+[INFO ] 2025-01-22 10:02:45.096 [main] Log - Step 1:   Verify browsing option presence.
+[INFO ] 2025-01-22 10:02:45.101 [main] Log - path is :C:\Users\gopinath.elumalai\Downloads\NBFC_CLS
+[INFO ] 2025-01-22 10:02:45.121 [main] Log - Step 2:  Attempt file upload (.jpeg, .jpg, .png, .gif, .pdf).
+[INFO ] 2025-01-22 10:02:45.121 [main] Log - Expected Result: Option present; files of specified types are uploadable.
+[INFO ] 2025-01-22 10:02:45.171 [main] Log - Step 1:   Verify browsing option presence.
+[INFO ] 2025-01-22 10:02:45.176 [main] Log - path is :C:\Users\gopinath.elumalai\Downloads\NBFC_CLS
+[INFO ] 2025-01-22 10:02:45.185 [main] Log - Step 2:  Attempt file upload (.jpeg, .jpg, .png, .gif, .pdf).
+[INFO ] 2025-01-22 10:02:45.185 [main] Log - Expected Result: Option present; files of specified types are uploadable.
+[INFO ] 2025-01-22 10:02:45.240 [main] Log - Step 1:   Verify MOA Document field and browsing option presence.
+[INFO ] 2025-01-22 10:02:45.247 [main] Log - path is :C:\Users\gopinath.elumalai\Downloads\NBFC_CLS
+[INFO ] 2025-01-22 10:02:45.257 [main] Log - Step 2:  Attempt file upload (.jpeg, .jpg, .png, .gif, .pdf).
+[INFO ] 2025-01-22 10:02:45.257 [main] Log - Expected Result: Field and option present; files are uploadable.
+[INFO ] 2025-01-22 10:02:45.320 [main] Log - Step 1:   Verify 'Institution sector' dropdown presence.
+[INFO ] 2025-01-22 10:02:45.587 [main] Log - Expected Result: Dropdown is present.
+[INFO ] 2025-01-22 10:02:55.094 [main] Log - Step 1:   Click 'Save&Proceed'.
+[INFO ] 2025-01-22 10:02:55.095 [main] Log - Expected Result: Data is saved, and user is navigated to the next section.
+[INFO ] 2025-01-22 10:02:55.205 [main] Log - Step 1: Type letters and numbers in 'House' textfield
+[INFO ] 2025-01-22 10:02:55.205 [main] Log - Expected Result: Letters and numbers can be entered in 'Building' field
+[INFO ] 2025-01-22 10:02:55.263 [main] Log - Step 1: Type letters and numbers in 'BuildingNo' textfield
+[INFO ] 2025-01-22 10:02:55.263 [main] Log - Expected Result: Letters and numbers can be entered in 'BuildingNo' field
+[INFO ] 2025-01-22 10:02:55.314 [main] Log - Step 1: Type letters and numbers in 'DoorNo' textfield
+[INFO ] 2025-01-22 10:02:55.314 [main] Log - Expected Result: Letters and numbers can be entered in 'DoorNo' field
+[INFO ] 2025-01-22 10:02:55.391 [main] Log - Step 1: Click on State dropdown
+[INFO ] 2025-01-22 10:02:55.391 [main] Log - Step 2: Select an item from the list
+[INFO ] 2025-01-22 10:02:55.391 [main] Log - Expected Result: State dropdown is clickable, and an item can be selected
+[INFO ] 2025-01-22 10:02:55.919 [main] Log - Step 1: Click on District dropdown
+[INFO ] 2025-01-22 10:02:55.919 [main] Log - Step 2: Select an item from the list
+[INFO ] 2025-01-22 10:02:55.919 [main] Log - Expected Result: District dropdown lists items related to selected State and is selectable
+[INFO ] 2025-01-22 10:02:56.279 [main] Log - Step 1:  Click on Post dropdown
+[INFO ] 2025-01-22 10:02:56.279 [main] Log - Step 2: Select an item from the list
+[INFO ] 2025-01-22 10:02:56.279 [main] Log - Expected Result: Post dropdown lists items related to selected District and is selectable
+[INFO ] 2025-01-22 10:02:56.327 [main] Log - Step 1:  Type letters and numbers in 'Place' textfield
+[INFO ] 2025-01-22 10:02:56.327 [main] Log - Expected Result: Letters and numbers can be entered in 'Place' field
+[INFO ] 2025-01-22 10:02:56.385 [main] Log - Step 1:   Type letters and numbers in 'City' textfield
+[INFO ] 2025-01-22 10:02:56.385 [main] Log - Expected Result: Letters and numbers can be entered in 'City' field
+[INFO ] 2025-01-22 10:02:56.681 [main] Log - Step 1:  Type letters and numbers in 'Street' textfield
+[INFO ] 2025-01-22 10:02:56.681 [main] Log - Expected Result: Letters and numbers can be entered in 'Street' field
+[INFO ] 2025-01-22 10:02:56.729 [main] Log - Step 1:  Type letters and numbers in 'Residence' textfield
+[INFO ] 2025-01-22 10:02:56.730 [main] Log - Expected Result: Letters and numbers can be entered in 'Residence' field
+[INFO ] 2025-01-22 10:02:56.933 [main] Log - Expected Result: Data automatically fills 'PIN' based on Post selection
+[INFO ] 2025-01-22 10:02:56.988 [main] Log - Step 1:  Type numbers in 'Phone NO' textfield
+[INFO ] 2025-01-22 10:02:56.989 [main] Log - Expected Result: Only numbers can be entered in 'Phone NO' field
+[INFO ] 2025-01-22 10:02:57.042 [main] Log - Step 1:  Type letters and numbers in 'Electric Post No' textfield
+[INFO ] 2025-01-22 10:02:57.042 [main] Log - Expected Result: Letters and numbers can be entered in 'Electric Post No' field
+[INFO ] 2025-01-22 10:03:01.379 [main] Log - Step 1:  Click on the checkbox
+[INFO ] 2025-01-22 10:03:01.380 [main] Log - Expected Result: Mailing Address' checkbox is present and can be ticked
+[INFO ] 2025-01-22 10:03:01.653 [main] Log - Step 1:  Type letters and numbers in 'Building' textfield
+[INFO ] 2025-01-22 10:03:01.653 [main] Log - Expected Result: Letters and numbers can be entered in 'Building' field
+[INFO ] 2025-01-22 10:03:01.716 [main] Log - Step 1:  Type letters and numbers in 'BuildingNo' textfield
+[INFO ] 2025-01-22 10:03:01.716 [main] Log - Expected Result: Letters and numbers can be entered in 'BuildingNo' field
+[INFO ] 2025-01-22 10:03:01.779 [main] Log - Step 1:  Type letters and numbers in 'DoorNo' textfield
+[INFO ] 2025-01-22 10:03:01.780 [main] Log - Expected Result: Letters and numbers can be entered in 'DoorNo' field
+[INFO ] 2025-01-22 10:03:02.178 [main] Log - Step 1:  Click on State dropdown
+[INFO ] 2025-01-22 10:03:02.178 [main] Log - Step 2:  Select an item from the list
+[INFO ] 2025-01-22 10:03:02.178 [main] Log - Expected Result: State dropdown is clickable, and an item can be selected
+[INFO ] 2025-01-22 10:03:02.537 [main] Log - Step 1:  Click on District dropdown
+[INFO ] 2025-01-22 10:03:02.537 [main] Log - Step 2:  Select an item from the list
+[INFO ] 2025-01-22 10:03:02.537 [main] Log - Expected Result: District dropdown lists items related to selected State and is selectable
+[INFO ] 2025-01-22 10:03:02.849 [main] Log - Step 1:  Click on Post dropdown
+[INFO ] 2025-01-22 10:03:02.850 [main] Log - Step 2:  Select an item from the list
+[INFO ] 2025-01-22 10:03:02.850 [main] Log - Expected Result: Post dropdown lists items related to selected District and is selectable
+[INFO ] 2025-01-22 10:03:02.909 [main] Log - Step 1:  Type letters and numbers in 'Place' textfield
+[INFO ] 2025-01-22 10:03:02.909 [main] Log - Expected Result: Letters and numbers can be entered in 'Place' field
+[INFO ] 2025-01-22 10:03:02.959 [main] Log - Step 1:  Type letters and numbers in 'City' textfield
+[INFO ] 2025-01-22 10:03:02.959 [main] Log - Expected Result: Letters and numbers can be entered in 'City' field
+[INFO ] 2025-01-22 10:03:03.015 [main] Log - Step 1:  Type letters and numbers in 'Street' textfield
+[INFO ] 2025-01-22 10:03:03.015 [main] Log - Expected Result: Letters and numbers can be entered in 'Street' field
+[INFO ] 2025-01-22 10:03:03.065 [main] Log - Step 1:  Type letters and numbers in 'Residence' textfield
+[INFO ] 2025-01-22 10:03:03.066 [main] Log - Expected Result: Letters and numbers can be entered in 'Residence' field
+[INFO ] 2025-01-22 10:03:03.110 [main] Log - Step 1:  Type letters and numbers in 'Residence' textfield
+[INFO ] 2025-01-22 10:03:03.110 [main] Log - Expected Result: Letters and numbers can be entered in 'Residence' field
+[INFO ] 2025-01-22 10:03:03.165 [main] Log - Step 1:  Type numbers in 'Phone NO' textfield
+[INFO ] 2025-01-22 10:03:03.166 [main] Log - Expected Result: Only numbers can be entered in 'Phone NO' field
+[INFO ] 2025-01-22 10:03:07.486 [main] Log - Step 1:  Click on the checkbox
+[INFO ] 2025-01-22 10:03:07.487 [main] Log - Expected Result: Mailing Address' checkbox is present and can be ticked
+[INFO ] 2025-01-22 10:03:13.159 [main] Log - Step 1:  Click 'Save & Proceed' button
+[INFO ] 2025-01-22 10:03:13.161 [main] Log - Expected Result: Address Details Successfully Saved' confirmation message displays
+[INFO ] 2025-01-22 10:03:13.267 [main] Log - Step 1:  Check page name is 'Introducer Details'.
+[INFO ] 2025-01-22 10:03:13.268 [main] Log - Expected Result: Page name is 'Introducer Details'.
+[INFO ] 2025-01-22 10:03:17.606 [main] Log - Step 1:  Click checkbox to tick it.
+[INFO ] 2025-01-22 10:03:17.606 [main] Log - Expected Result: Checkbox is ticked; 'Reason' textfield appears.
+[INFO ] 2025-01-22 10:03:17.706 [main] Log - Step 1:  Type alphabets and numbers in 'Reason'.
+[INFO ] 2025-01-22 10:03:17.706 [main] Log - Expected Result: Reason' textfield visible and accepts characters/numerals.
+[INFO ] 2025-01-22 10:03:22.048 [main] Log - Step 1:  Untick checkbox.
+[INFO ] 2025-01-22 10:03:22.049 [main] Log - Expected Result: Checkbox is unticked; 'Reason' textfield disappears.
+[INFO ] 2025-01-22 10:03:39.577 [main] Log - Expected Result: IntName' field auto-fills after customer selection.
+[INFO ] 2025-01-22 10:03:39.916 [main] Log - Step 1: Click 'Rel_ID' dropdown.
+[INFO ] 2025-01-22 10:03:39.917 [main] Log - Step 2: Select an item.
+[INFO ] 2025-01-22 10:03:39.918 [main] Log - Expected Result: Dropdown opens and selection is possible.
+[INFO ] 2025-01-22 10:03:39.999 [main] Log - Step 1: Type alphabets and numbers in 'Remarks'.
+[INFO ] 2025-01-22 10:03:39.999 [main] Log - Expected Result: Remarks' field present and accepts input.
+[INFO ] 2025-01-22 10:03:40.067 [main] Log - Step 1: Click 'Active Account' button.
+[INFO ] 2025-01-22 10:03:40.067 [main] Log - Step 2: Verify details of selected customer.
+[INFO ] 2025-01-22 10:03:40.067 [main] Log - Expected Result: Active account details displayed.
+[INFO ] 2025-01-22 10:03:44.412 [main] Log - Step 1: Click 'Close' button.
+[INFO ] 2025-01-22 10:03:44.413 [main] Log - Expected Result: Active account details window closes.
+[INFO ] 2025-01-22 10:03:49.425 [main] Log - Step 1: Click 'Save & Proceed' after entering details.
+[INFO ] 2025-01-22 10:03:49.425 [main] Log - Expected Result: Message 'Introducer Details Successfully Saved' is displayed.
+[INFO ] 2025-01-22 10:03:49.951 [main] Log - Step 1: Click on the 'Identity Type' dropdown.
+[INFO ] 2025-01-22 10:03:49.951 [main] Log - Step 2: Select an item.
+[INFO ] 2025-01-22 10:03:49.951 [main] Log - Expected Result: Dropdown opens, item is selectable, and 'Proof Type' is auto-filled.
+[INFO ] 2025-01-22 10:03:50.278 [main] Log - Step 1:  Enter alphabets and numerals.
+[INFO ] 2025-01-22 10:03:50.278 [main] Log - Expected Result: Alphabets and numerals are accepted.
+[INFO ] 2025-01-22 10:03:50.338 [main] Log - Step 1:  Enter alphabets and numerals.
+[INFO ] 2025-01-22 10:03:50.339 [main] Log - Expected Result: Alphabets and numerals are accepted.
+[INFO ] 2025-01-22 10:03:59.750 [main] Log - Step 1:  Locate the 'Issue Date' field.
+[INFO ] 2025-01-22 10:03:59.750 [main] Log - Step 2:   Enter a invalid date.
+[INFO ] 2025-01-22 10:04:08.447 [main] Log - Step 3:   Enter a valid date.
+[INFO ] 2025-01-22 10:04:08.447 [main] Log - Expected Result: Valid date is accepted, invalid date prompts an error.
+[INFO ] 2025-01-22 10:04:12.882 [main] Log - Step 3:   Enter a valid date.
+[INFO ] 2025-01-22 10:04:12.882 [main] Log - Expected Result: Valid date is accepted, invalid date prompts an error.
+[INFO ] 2025-01-22 10:04:12.943 [main] Log - Step 1: Enter alphabets and numerals.
+[INFO ] 2025-01-22 10:04:12.943 [main] Log - Expected Result: Alphabets and numerals are accepted.
+[INFO ] 2025-01-22 10:04:17.569 [main] Log - Step 1: Click 'Add Images' button.
+[INFO ] 2025-01-22 10:04:17.578 [main] Log - path is :C:\Users\gopinath.elumalai\Downloads\NBFC_CLS
+[INFO ] 2025-01-22 10:04:17.593 [main] Log - Step 2: Select an image (.jpeg, .jpg, .png, .gif, .pdf).
+[INFO ] 2025-01-22 10:04:22.961 [main] Log - Step 3: Add the file.
+[INFO ] 2025-01-22 10:04:23.084 [main] Log - Expected Result: Selected image is displayed in popup, popup closes successfully.
+[INFO ] 2025-01-22 10:04:28.505 [main] Log - Step 1: Click 'ADD DOCUMENT' button.
+[INFO ] 2025-01-22 10:04:28.506 [main] Log - Step 2: Verify document data appears in the grid.
+[INFO ] 2025-01-22 10:04:28.506 [main] Log - Expected Result: Document data displayed in the grid successfully.
+[INFO ] 2025-01-22 10:04:28.902 [main] Log - Step 1: Click on 'Area' drop down.
+[INFO ] 2025-01-22 10:04:28.902 [main] Log - Step 2: Select an item from the list.
+[INFO ] 2025-01-22 10:04:28.903 [main] Log - Expected Result: Selected item is highlighted and displayed.
+[INFO ] 2025-01-22 10:04:29.232 [main] Log - Step 1:  Click on 'Amsham' drop down.
+[INFO ] 2025-01-22 10:04:29.232 [main] Log - Step 2: Select an item from the list.
+[INFO ] 2025-01-22 10:04:29.233 [main] Log - Expected Result: Selected item is highlighted and displayed.
+[INFO ] 2025-01-22 10:04:30.089 [main] Log - Step 1:  Click on 'Amsham' drop down.
+[INFO ] 2025-01-22 10:04:30.090 [main] Log - Step 2: Select an item from the list.
+[INFO ] 2025-01-22 10:04:30.091 [main] Log - Expected Result: Selected item is highlighted and displayed.
+[INFO ] 2025-01-22 10:04:30.388 [main] Log - Step 1:   Click on 'Village' drop down.
+[INFO ] 2025-01-22 10:04:30.389 [main] Log - Step 2: Select an item from the list.
+[INFO ] 2025-01-22 10:04:30.390 [main] Log - Expected Result: Selected item is highlighted and displayed.
+[INFO ] 2025-01-22 10:04:30.467 [main] Log - Step 1:   Click on 'Ward' drop down.
+[INFO ] 2025-01-22 10:04:30.468 [main] Log - Step 2: Select an item from the list.
+[INFO ] 2025-01-22 10:04:30.468 [main] Log - Expected Result: Selected item is highlighted and displayed.
+[INFO ] 2025-01-22 10:04:30.778 [main] Log - Step 1:   Click on 'Panchayath' drop down.
+[INFO ] 2025-01-22 10:04:30.779 [main] Log - Step 2: Select an item from the list.
+[INFO ] 2025-01-22 10:04:30.779 [main] Log - Expected Result: Selected item is highlighted and displayed.
+[INFO ] 2025-01-22 10:04:31.090 [main] Log - Step 1:   Click on 'Assembly Constituency' drop down.
+[INFO ] 2025-01-22 10:04:31.091 [main] Log - Step 2: Select an item from the list.
+[INFO ] 2025-01-22 10:04:31.091 [main] Log - Expected Result: Selected item is highlighted and displayed.
+[INFO ] 2025-01-22 10:04:31.389 [main] Log - Step 1:   Click on 'Taluk' drop down.
+[INFO ] 2025-01-22 10:04:31.390 [main] Log - Step 2: Select an item from the list.
+[INFO ] 2025-01-22 10:04:31.390 [main] Log - Expected Result: Selected item is highlighted and displayed.
+[INFO ] 2025-01-22 10:04:31.457 [main] Log - Step 1:   Enter numeric values in the 'PanchayathWard' textfield.
+[INFO ] 2025-01-22 10:04:31.457 [main] Log - Expected Result: Only numerals can be entered in the 'PanchayathWard' textfield.
+[INFO ] 2025-01-22 10:04:31.507 [main] Log - Step 1:   Enter numeric values in the 'BankWard' textfield.
+[INFO ] 2025-01-22 10:04:31.508 [main] Log - Expected Result: Only numerals can be entered in the 'BankWard' textfield.
+[INFO ] 2025-01-22 10:04:31.591 [main] Log - Step 1:    Click on 'Land Type' drop down.
+[INFO ] 2025-01-22 10:04:31.591 [main] Log - Step 2:    Select an item from the list.
+[INFO ] 2025-01-22 10:04:31.592 [main] Log - Expected Result: Selected item is highlighted and displayed.
+[INFO ] 2025-01-22 10:04:31.643 [main] Log - Step 1:    Enter alphanumeric values in the 'Survey No' textfield.
+[INFO ] 2025-01-22 10:04:31.644 [main] Log - Expected Result: Only alphabets and numerals can be entered in 'Survey No' textfield.
+[INFO ] 2025-01-22 10:04:31.696 [main] Log - Step 1:    Enter alphanumeric values in the 'ReSurvey No' textfield.
+[INFO ] 2025-01-22 10:04:31.697 [main] Log - Expected Result: Only alphabets and numerals can be entered in 'ReSurvey No' textfield.
+[INFO ] 2025-01-22 10:04:32.011 [main] Log - Step 1:   Click on 'Unit' drop down.
+[INFO ] 2025-01-22 10:04:32.011 [main] Log - Step 2:    Select an item from the list.
+[INFO ] 2025-01-22 10:04:32.011 [main] Log - Expected Result: Selected item is highlighted and displayed.
+[INFO ] 2025-01-22 10:04:36.401 [main] Log - Step 1: Enter numeric values in the 'Wet' textfield.
+[INFO ] 2025-01-22 10:04:36.402 [main] Log - Expected Result: Only numerals can be entered in the 'Wet' textfield.
+[INFO ] 2025-01-22 10:04:40.769 [main] Log - Step 1:  Enter numeric values in the 'Dry' textfield.
+[INFO ] 2025-01-22 10:04:40.769 [main] Log - Expected Result: Only numerals can be entered in the 'Dry' textfield.
+[INFO ] 2025-01-22 10:04:45.174 [main] Log - Step 1: Click on 'Add' button.
+[INFO ] 2025-01-22 10:04:45.175 [main] Log - Step 2: Check the grid for data insertion.
+[INFO ] 2025-01-22 10:04:45.175 [main] Log - Expected Result: Data is inserted into the grid.
+[INFO ] 2025-01-22 10:04:49.868 [main] Log - Step 1: Click 'Save & Proceed' button.
+[INFO ] 2025-01-22 10:04:49.870 [main] Log - Step 2: Verify data is saved successfully.
+[INFO ] 2025-01-22 10:04:49.871 [main] Log - Expected Result: Data is successfully saved.
+[INFO ] 2025-01-22 10:04:50.207 [main] Log - Step 1: Select a state from the list
+[INFO ] 2025-01-22 10:04:50.207 [main] Log - Expected Result: State is selected
+[INFO ] 2025-01-22 10:04:50.508 [main] Log - Step 1: Select a BankID from the list
+[INFO ] 2025-01-22 10:04:50.508 [main] Log - Expected Result: BankID is selected
+[INFO ] 2025-01-22 10:04:51.899 [main] Log - Step 1: Select a BranchID from the list
+[INFO ] 2025-01-22 10:04:51.899 [main] Log - Expected Result: BranchID is selected
+[INFO ] 2025-01-22 10:04:51.944 [main] Log - Step 1: Check if IFSC code field is auto-filled
+[INFO ] 2025-01-22 10:04:51.944 [main] Log - Expected Result: IFSC code field is auto-filled
+[INFO ] 2025-01-22 10:04:52.001 [main] Log - Step 1: Enter alphabets, numerals, and special characters in 'Cust Name' field
+[INFO ] 2025-01-22 10:04:52.001 [main] Log - Expected Result: Only alphabets are allowed
+alphabets,numbers and special character allowed
+[INFO ] 2025-01-22 10:04:52.053 [main] Log - Step 1: Enter alphabets, numerals, and special characters in 'Address' field
+[INFO ] 2025-01-22 10:04:52.053 [main] Log - Expected Result: Input is accepted
+[INFO ] 2025-01-22 10:04:52.107 [main] Log - Step 1: Enter alphabets, numerals, and special characters in 'BankAccNo' field
+[INFO ] 2025-01-22 10:04:52.107 [main] Log - Expected Result: alphabets, numerals, and special characters allowed, field is encrypted
+[INFO ] 2025-01-22 10:04:52.164 [main] Log - Step 1: Enter alphabets, numerals, and special characters in 'RetypeAccNo' field
+[INFO ] 2025-01-22 10:04:52.164 [main] Log - Expected Result: alphabets, numerals, and special characters allowed, field is encrypted
+[INFO ] 2025-01-22 10:04:52.453 [main] Log - Step 1: Select a BankAccID from the list
+[INFO ] 2025-01-22 10:04:52.453 [main] Log - Expected Result: BankAccID is selected
+[INFO ] 2025-01-22 10:04:57.059 [main] Log - Step 1: Enter a date in 'Start Date' field
+[INFO ] 2025-01-22 10:04:57.060 [main] Log - Expected Result: Date is entered
+[INFO ] 2025-01-22 10:05:01.440 [main] Log - Step 1: Click the 'Additional Information' checkbox
+[INFO ] 2025-01-22 10:05:01.440 [main] Log - Expected Result: Balance Ason', 'Balance', 'Credit card', 'Credit card no' are displayed
+[INFO ] 2025-01-22 10:05:01.521 [main] Log - Step 1: Enter a date in 'Balance Ason' field
+[INFO ] 2025-01-22 10:05:01.521 [main] Log - Expected Result: Date is entered
+[INFO ] 2025-01-22 10:05:01.576 [main] Log - Step 1: Enter numerals only in 'Balance' field
+[INFO ] 2025-01-22 10:05:01.576 [main] Log - Expected Result: Input is accepted
+[INFO ] 2025-01-22 10:05:05.905 [main] Log - Step 1: Click 'Not Mentioned' checkbox
+[INFO ] 2025-01-22 10:05:05.905 [main] Log - Expected Result: Balance' field is removed
+[INFO ] 2025-01-22 10:05:10.229 [main] Log - Step 1: Check if 'Credit Card' checkbox can be ticked
+[INFO ] 2025-01-22 10:05:10.230 [main] Log - Expected Result: Checkbox is ticked
+[INFO ] 2025-01-22 10:05:10.304 [main] Log - Step 1: Enter alphabets, numerals, special characters in 'Credit Card No' field if tick the credit card checkbox
+[INFO ] 2025-01-22 10:05:10.304 [main] Log - Expected Result: Only numerals are accepted
+alphabets, numerals, and special characters allowed
+[INFO ] 2025-01-22 10:05:14.745 [main] Log - Step 1: Click 'Add' button
+[INFO ] 2025-01-22 10:05:14.745 [main] Log - Expected Result: Data is inserted into the gridd
+[INFO ] 2025-01-22 10:05:14.813 [main] Log - Step 1: Enter alphabets and numerals in 'DPID' field
+[INFO ] 2025-01-22 10:05:14.813 [main] Log - Expected Result: Input is accepted
+[INFO ] 2025-01-22 10:05:14.868 [main] Log - Step 1: Enter alphabets and numerals in 'Demat Acno' field
+[INFO ] 2025-01-22 10:05:14.868 [main] Log - Expected Result: Input is accepted
+[INFO ] 2025-01-22 10:05:19.434 [main] Log - Step 1: Click 'Proceed' button
+[INFO ] 2025-01-22 10:05:19.435 [main] Log - Expected Result: Data is successfully saved
+[INFO ] 2025-01-22 10:05:19.795 [main] Log - Step 1: Click 'Proceed' button
+[INFO ] 2025-01-22 10:05:19.795 [main] Log - Step 2: Select an item from the dropdown.
+[INFO ] 2025-01-22 10:05:19.795 [main] Log - Expected Result: The item is selected and reflected in the dropdown list.
+[INFO ] 2025-01-22 10:05:19.865 [main] Log - Step 1: Enter alphabets, numerals, and special characters into the 'Remarks' field.
+[INFO ] 2025-01-22 10:05:19.865 [main] Log - Expected Result: The 'Remarks' field accepts alphabets, numerals, and special characters.
+[INFO ] 2025-01-22 10:05:19.943 [main] Log - Step 1: Enter alphabets, numerals, and special characters into the 'Activespecialinstruction' field.
+[INFO ] 2025-01-22 10:05:19.943 [main] Log - Expected Result: The 'Activespecialinstruction' field accepts alphabets, numerals, and special characters.
+[INFO ] 2025-01-22 10:05:20.010 [main] Log - Step 1: Verify the default state of the 'suspecious' checkbox.
+[INFO ] 2025-01-22 10:05:20.010 [main] Log - Expected Result: The 'suspecious' checkbox is unticked by default.
+[INFO ] 2025-01-22 10:05:24.360 [main] Log - Step 1: Attempt to tick the 'suspecious' checkbox.
+[INFO ] 2025-01-22 10:05:24.361 [main] Log - Expected Result: The 'suspecious' checkbox is ticked successfully.
+[INFO ] 2025-01-22 10:05:32.576 [main] Log - Step 1: Click on the 'Save&Proceed' button.
+[INFO ] 2025-01-22 10:05:32.576 [main] Log - Expected Result: Data is successfully saved, and the user proceeds to the next part.
+[INFO ] 2025-01-22 10:05:32.700 [main] Log - Step 1:  Select 'Photo' from dropdown
+[INFO ] 2025-01-22 10:05:32.701 [main] Log - Expected Result: Photo' selected in dropdown
+[INFO ] 2025-01-22 10:05:32.734 [main] Log - path is :C:\Users\gopinath.elumalai\Downloads\NBFC_CLS
+[INFO ] 2025-01-22 10:05:32.743 [main] Log - Step 1:  Click 'browse' button
+[INFO ] 2025-01-22 10:05:32.743 [main] Log - Step 2:  Select an image with .jpeg, .jpg, .png, .gif, or .pdf format
+[INFO ] 2025-01-22 10:05:32.743 [main] Log - Expected Result: Selected image file is accepted for upload
+[INFO ] 2025-01-22 10:05:41.648 [main] Log - Step 1:  Click 'Add' button
+[INFO ] 2025-01-22 10:05:41.727 [main] Log - Expected Result: Photo displayed in the window
+[INFO ] 2025-01-22 10:05:41.979 [main] Log - Step 1:  Select 'Sign' from dropdown
+[INFO ] 2025-01-22 10:05:41.979 [main] Log - Expected Result: Sign' selected in dropdown
+[INFO ] 2025-01-22 10:05:42.042 [main] Log - path is :C:\Users\gopinath.elumalai\Downloads\NBFC_CLS
+[INFO ] 2025-01-22 10:05:42.078 [main] Log - Step 1:  Click 'browse' button
+[INFO ] 2025-01-22 10:05:42.078 [main] Log - Step 2:  Select a signature image with .jpeg, .jpg, .png, .gif, or .pdf format
+[INFO ] 2025-01-22 10:05:42.078 [main] Log - Expected Result: Selected sign file is accepted for upload
+[INFO ] 2025-01-22 10:05:46.561 [main] Log - Step 1:  Click 'Add' button
+[INFO ] 2025-01-22 10:05:46.561 [main] Log - Expected Result: Sign image displayed in the window
+[INFO ] 2025-01-22 10:05:47.610 [main] Log - Step 1:  Select 'General' from dropdown
+[INFO ] 2025-01-22 10:05:47.610 [main] Log - Expected Result: General' selected in dropdown
+[INFO ] 2025-01-22 10:05:47.858 [main] Log - Step 1:   Check if the list of document names is present in dropdown
+[INFO ] 2025-01-22 10:05:47.859 [main] Log - Expected Result: Document name dropdown is present
+[INFO ] 2025-01-22 10:05:47.897 [main] Log - path is :C:\Users\gopinath.elumalai\Downloads\NBFC_CLS
+[INFO ] 2025-01-22 10:05:47.905 [main] Log - Step 1: Click 'browse' button
+[INFO ] 2025-01-22 10:05:47.905 [main] Log - Step 2:  Select a general image with .jpeg, .jpg, .png, .gif, or .pdf format
+[INFO ] 2025-01-22 10:05:47.905 [main] Log - Expected Result: Selected general file is accepted for upload
+[INFO ] 2025-01-22 10:05:53.014 [main] Log - Step 1:  Click 'Add' button
+[INFO ] 2025-01-22 10:05:53.014 [main] Log - Expected Result: General image displayed in the window
+[INFO ] 2025-01-22 10:05:57.718 [main] Log - Step 1:  Click 'Proceed' button
+[INFO ] 2025-01-22 10:05:57.719 [main] Log - Expected Result: Data is successfully saved

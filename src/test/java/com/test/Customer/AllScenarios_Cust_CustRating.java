@@ -12,7 +12,7 @@ import com.BasePackage.Base_Class;
 import com.Page_Customer.Customer_CustomerRating;
 import com.Page_Customer.Customer_CustomerRegister;
 import com.Page_Repositary.PageRepositary_Cust_CustRegister;
-import com.Page_Repositary.PageRepository_CustRating;
+import com.Page_Repositary.PageRepository_CustRating;	
 import com.Utility.Log;
 import com.extentReports.ExtentManager;
 import com.extentReports.ExtentTestManager;
@@ -42,7 +42,7 @@ public class AllScenarios_Cust_CustRating  {
 	}
 
 	@Test(dataProvider = "TestData")
-	public void customerRegister(Map<Object, Object> testdata, ITestContext context) throws ClassNotFoundException, InterruptedException, IOException{
+	public void customerRating(Map<Object, Object> testdata, ITestContext context) throws ClassNotFoundException, InterruptedException, IOException{
 		try {
 			if(testdata.get("Run").toString().equalsIgnoreCase("Yes")){
 				ExtentTestManager.startTest(testdata.get("TestScenario").toString());
@@ -76,11 +76,8 @@ public class AllScenarios_Cust_CustRating  {
 				//TC -3 -->Verify Module Name Display
 				custRa.testModuleNameIsDisplayed();
 
-
-
 				//TC -4 -->Verify Presence of Customer ID and Name Fields
 				custRa.verifyCustomerIDAndNameFieldsPresence();
-
 
 				//TC -5 --> Verify Presence of Buttons
 				custRa.testButtonPresence();
