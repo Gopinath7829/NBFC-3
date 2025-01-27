@@ -172,6 +172,7 @@ public class AllScenarios_PersonalLoan {
 					personalLoan.testSelectAndAuthorizeInCashier();
 					
 					
+					//Signout
 					Thread.sleep(5000);
 					personalLoan.signOut();
 
