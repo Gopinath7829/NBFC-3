@@ -171,7 +171,7 @@ public class AllScenarios_PersonalLoan {
 					//TC-36
 					personalLoan.testSelectAndAuthorizeInCashier();
 					
-					
+					// commits changes
 					//Signout
 					Thread.sleep(5000);
 					personalLoan.signOut();
